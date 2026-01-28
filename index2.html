@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert Orthodontic Braces Treatment in Bangalore - Metal, Ceramic, Clear Aligners. Transform your smile at Clinic Golden Proportions.">
+    <title>Orthodontic Braces Treatment in Bangalore | Clinic Golden Proportions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --cgp-primary: #1a4d7a;
+            --cgp-secondary: #d4af37;
+            --cgp-accent: #0f3a5f;
+            --cgp-light: #f8f9fa;
+            --cgp-dark: #2c3e50;
+            --cgp-gold-light: #f4e6c3;
+            --cgp-text: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--cgp-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        /* Hero Section */
+        .cgp-ortho-hero-section {
+            background: linear-gradient(135deg, rgba(15, 58, 95, 0.95) 0%, rgba(26, 77, 122, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cgp-ortho-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        
+        .cgp-ortho-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cgp-ortho-hero-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .cgp-ortho-hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: var(--cgp-gold-light);
+        }
+        
+        .cgp-ortho-hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+        
+        .cgp-ortho-contact-info {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .cgp-ortho-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .cgp-ortho-contact-item i {
+            color: var(--cgp-secondary);
+            font-size: 1.3rem;
+        }
+        
+        .cgp-ortho-btn-primary {
+            background: var(--cgp-secondary);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .cgp-ortho-btn-primary:hover {
+            background: #c29d2f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            color: white;
+        }
+        
+        /* Why Choose Section */
+        .cgp-ortho-why-choose-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .cgp-ortho-section-title {
+            font-size: 2.5rem;
+            color: var(--cgp-primary);
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .cgp-ortho-section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--cgp-secondary);
+            margin: 15px auto 0;
+        }
+        
+        .cgp-ortho-feature-card {
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .cgp-ortho-feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .cgp-ortho-feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--cgp-primary), var(--cgp-accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .cgp-ortho-feature-title {
+            font-size: 1.4rem;
+            color: var(--cgp-primary);
+            margin-bottom: 15px;
+        }
+        
+        .cgp-ortho-feature-description {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        /* Braces Types Section */
+        .cgp-ortho-braces-section {
+            padding: 80px 0;
+            background: var(--cgp-light);
+        }
+        
+        .cgp-ortho-braces-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .cgp-ortho-braces-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .cgp-ortho-braces-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .cgp-ortho-braces-header {
+            background: linear-gradient(135deg, var(--cgp-primary), var(--cgp-accent));
+            color: white;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .cgp-ortho-braces-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--cgp-secondary);
+        }
+        
+        .cgp-ortho-braces-title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .cgp-ortho-braces-body {
+            padding: 25px;
+        }
+        
+        .cgp-ortho-braces-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Conditions Section */
+        .cgp-ortho-conditions-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .cgp-ortho-conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .cgp-ortho-condition-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: var(--cgp-light);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .cgp-ortho-condition-item:hover {
+            background: var(--cgp-gold-light);
+            transform: translateX(5px);
+        }
+        
+        .cgp-ortho-condition-item i {
+            color: var(--cgp-secondary);
+            font-size: 1.5rem;
+        }
+        
+        /* Before After Section */
+        .cgp-ortho-before-after-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(26, 77, 122, 0.95) 0%, rgba(15, 58, 95, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1920&q=80') center/cover no-repeat;
+            color: white;
+        }
+        
+        .cgp-ortho-comparison-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            height: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .cgp-ortho-comparison-title {
+            font-size: 1.8rem;
+            color: var(--cgp-secondary);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .cgp-ortho-comparison-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .cgp-ortho-comparison-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .cgp-ortho-comparison-list i {
+            color: var(--cgp-secondary);
+            font-size: 1.3rem;
+            margin-top: 3px;
+        }
+        
+        /* Process Section */
+        .cgp-ortho-process-section {
+            padding: 80px 0;
+            background: var(--cgp-light);
+        }
+        
+        .cgp-ortho-process-timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        .cgp-ortho-process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+        
+        .cgp-ortho-step-number {
+            min-width: 60px;
+            height: 60px;
+            background: var(--cgp-secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .cgp-ortho-step-content h4 {
+            color: var(--cgp-primary);
+            margin-bottom: 10px;
+        }
+        
+        .cgp-ortho-step-content p {
+            color: #666;
+            margin: 0;
+        }
+        
+        /* Why Braces Section */
+        .cgp-ortho-why-braces-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .cgp-ortho-benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .cgp-ortho-benefit-item i {
+            color: var(--cgp-secondary);
+            font-size: 1.5rem;
+            margin-top: 3px;
+        }
+        
+        .cgp-ortho-benefit-item span {
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .cgp-ortho-benefits-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* Stats Section */
+        .cgp-ortho-stats-section {
+            background: linear-gradient(135deg, var(--cgp-accent) 0%, var(--cgp-primary) 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .cgp-ortho-stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .cgp-ortho-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--cgp-secondary);
+            margin-bottom: 10px;
+        }
+        
+        .cgp-ortho-stat-label {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        
+        /* Gallery Section */
+        .cgp-ortho-gallery-section {
+            padding: 80px 0;
+            background: var(--cgp-light);
+        }
+        
+        .cgp-ortho-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .cgp-ortho-gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 250px;
+        }
+        
+        .cgp-ortho-gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .cgp-ortho-gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .cgp-ortho-gallery-item:hover .cgp-ortho-gallery-image {
+            transform: scale(1.1);
+        }
+        
+        .cgp-ortho-gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(26, 77, 122, 0.9), transparent);
+            padding: 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .cgp-ortho-gallery-item:hover .cgp-ortho-gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Location Section */
+        .cgp-ortho-location-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .cgp-ortho-location-card {
+            background: var(--cgp-light);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .cgp-ortho-location-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .cgp-ortho-location-item i {
+            color: var(--cgp-secondary);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+        
+        .cgp-ortho-location-item strong {
+            color: var(--cgp-primary);
+        }
+        
+        /* CTA Section */
+        .cgp-ortho-cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--cgp-secondary) 0%, #c29d2f 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cgp-ortho-cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cgp-ortho-cta-contact {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .cgp-ortho-cta-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .cgp-ortho-cta-contact-item i {
+            font-size: 1.5rem;
+        }
+        
+        .cgp-ortho-btn-light {
+            background: white;
+            color: var(--cgp-primary);
+            padding: 18px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cgp-ortho-btn-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            color: var(--cgp-primary);
+        }
+        
+        /* Footer */
+        .cgp-ortho-footer {
+            background: var(--cgp-dark);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cgp-ortho-hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .cgp-ortho-hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .cgp-ortho-hero-description {
+                font-size: 1rem;
+            }
+            
+            .cgp-ortho-contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cgp-ortho-section-title {
+                font-size: 2rem;
+            }
+            
+            .cgp-ortho-stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .cgp-ortho-cta-title {
+                font-size: 2rem;
+            }
+            
+            .cgp-ortho-cta-contact {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="cgp-ortho-hero-section">
+        <div class="container">
+            <div class="cgp-ortho-hero-content">
+                <h1 class="cgp-ortho-hero-title">Orthodontic Braces Treatment in Bangalore</h1>
+                <p class="cgp-ortho-hero-subtitle">Straighten Your Smile with Expert Braces Care</p>
+                <p class="cgp-ortho-hero-description">
+                    Transform your smile with advanced orthodontic braces. Personalized treatment for perfectly aligned teeth and enhanced facial harmony.
+                </p>
+                
+                <div class="cgp-ortho-contact-info">
+                    <div class="cgp-ortho-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+91 63627 17686</span>
+                    </div>
+                    <div class="cgp-ortho-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>info@clinicgp.com</span>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="tel:+916362717686" class="cgp-ortho-btn-primary">Book Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="cgp-ortho-why-choose-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Why Choose Us for Braces?</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cgp-ortho-feature-card">
+                        <div class="cgp-ortho-feature-icon">
+                            <i class="bi bi-person-badge-fill"></i>
+                        </div>
+                        <h3 class="cgp-ortho-feature-title">Expert Orthodontic Specialists</h3>
+                        <p class="cgp-ortho-feature-description">
+                            Led by Prof. Dr. Nanda Kishore P (MDS, BDS) with decades of experience in complex smile transformations.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="cgp-ortho-feature-card">
+                        <div class="cgp-ortho-feature-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h3 class="cgp-ortho-feature-title">Golden Proportions Philosophy</h3>
+                        <p class="cgp-ortho-feature-description">
+                            Braces treatment customized using universal beauty ratios for natural facial harmony and aesthetic results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="cgp-ortho-feature-card">
+                        <div class="cgp-ortho-feature-icon">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </div>
+                        <h3 class="cgp-ortho-feature-title">Integrated Care Approach</h3>
+                        <p class="cgp-ortho-feature-description">
+                            Combined orthodontics with jaw surgery and cosmetic dentistry when needed for comprehensive facial balance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Braces Types Section -->
+    <section class="cgp-ortho-braces-section" id="braces-types">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Types of Braces We Offer</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="cgp-ortho-braces-card">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80" alt="Metal Braces" class="cgp-ortho-braces-image">
+                        <div class="cgp-ortho-braces-header">
+                            <div class="cgp-ortho-braces-icon">
+                                <i class="bi bi-grid-3x3-gap-fill"></i>
+                            </div>
+                            <h3 class="cgp-ortho-braces-title">Metal Braces</h3>
+                        </div>
+                        <div class="cgp-ortho-braces-body">
+                            <p class="cgp-ortho-braces-description">
+                                Most effective and reliable option for all dental corrections. Durable, cost-effective solution for simple to complex cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="cgp-ortho-braces-card">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Ceramic Braces" class="cgp-ortho-braces-image">
+                        <div class="cgp-ortho-braces-header">
+                            <div class="cgp-ortho-braces-icon">
+                                <i class="bi bi-circle-fill"></i>
+                            </div>
+                            <h3 class="cgp-ortho-braces-title">Ceramic Braces</h3>
+                        </div>
+                        <div class="cgp-ortho-braces-body">
+                            <p class="cgp-ortho-braces-description">
+                                Tooth-colored brackets that blend naturally. Aesthetic appeal with the same effectiveness as metal braces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="cgp-ortho-braces-card">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Self-Ligating Braces" class="cgp-ortho-braces-image">
+                        <div class="cgp-ortho-braces-header">
+                            <div class="cgp-ortho-braces-icon">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                            </div>
+                            <h3 class="cgp-ortho-braces-title">Self-Ligating Braces</h3>
+                        </div>
+                        <div class="cgp-ortho-braces-body">
+                            <p class="cgp-ortho-braces-description">
+                                Advanced system with fewer adjustments and faster treatment time. More comfortable with quicker results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="cgp-ortho-braces-card">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80" alt="Lingual Braces" class="cgp-ortho-braces-image">
+                        <div class="cgp-ortho-braces-header">
+                            <div class="cgp-ortho-braces-icon">
+                                <i class="bi bi-eye-slash-fill"></i>
+                            </div>
+                            <h3 class="cgp-ortho-braces-title">Lingual Braces</h3>
+                        </div>
+                        <div class="cgp-ortho-braces-body">
+                            <p class="cgp-ortho-braces-description">
+                                Hidden behind teeth for complete invisibility. Perfect for those seeking maximum discretion during treatment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="cgp-ortho-braces-card">
+                        <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80" alt="Clear Aligners" class="cgp-ortho-braces-image">
+                        <div class="cgp-ortho-braces-header">
+                            <div class="cgp-ortho-braces-icon">
+                                <i class="bi bi-box-fill"></i>
+                            </div>
+                            <h3 class="cgp-ortho-braces-title">Clear Aligners</h3>
+                        </div>
+                        <div class="cgp-ortho-braces-body">
+                            <p class="cgp-ortho-braces-description">
+                                Removable, transparent trays for mild to moderate corrections. Ideal for adults preferring discreet treatment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conditions Section -->
+    <section class="cgp-ortho-conditions-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Conditions We Treat</h2>
+            
+            <div class="cgp-ortho-conditions-grid">
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Crooked or crowded teeth</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Gummy smile</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Overbite / Underbite / Crossbite</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Protruding teeth</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Gaps and spacing</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Jaw misalignment</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Facial asymmetry</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before After Section -->
+    <section class="cgp-ortho-before-after-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Before & After Braces</h2>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="cgp-ortho-comparison-card">
+                        <h3 class="cgp-ortho-comparison-title">Before Treatment</h3>
+                        <ul class="cgp-ortho-comparison-list">
+                            <li>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <span>Crooked, misaligned teeth</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <span>Improper bite causing discomfort</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <span>Gaps or overcrowding</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <span>Self-consciousness about smile</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <span>Facial imbalance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="cgp-ortho-comparison-card">
+                        <h3 class="cgp-ortho-comparison-title">After Treatment</h3>
+                        <ul class="cgp-ortho-comparison-list">
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Perfectly straight teeth</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Improved bite function</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Even spacing and alignment</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Confident, beautiful smile</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Balanced facial proportions</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Better oral health</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="cgp-ortho-process-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Treatment Process</h2>
+            
+            <div class="cgp-ortho-process-timeline">
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">1</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Free Consultation</h4>
+                        <p>Detailed examination with X-rays and 3D scans</p>
+                    </div>
+                </div>
+                
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">2</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Custom Plan</h4>
+                        <p>Personalized treatment designed for your goals</p>
+                    </div>
+                </div>
+                
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">3</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Braces Application</h4>
+                        <p>Precise placement for comfort and effectiveness</p>
+                    </div>
+                </div>
+                
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">4</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Regular Adjustments</h4>
+                        <p>Monitoring every 4-6 weeks</p>
+                    </div>
+                </div>
+                
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">5</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Beautiful Results</h4>
+                        <p>Celebrate your new smile</p>
+                    </div>
+                </div>
+                
+                <div class="cgp-ortho-process-step">
+                    <div class="cgp-ortho-step-number">6</div>
+                    <div class="cgp-ortho-step-content">
+                        <h4>Retention</h4>
+                        <p>Custom retainers to maintain results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Braces Section -->
+    <section class="cgp-ortho-why-braces-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Why Braces Work Best</h2>
+            
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80" alt="Braces Benefits" class="cgp-ortho-benefits-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="cgp-ortho-benefit-item">
+                        <i class="bi bi-star-fill"></i>
+                        <span>Effective for all types of corrections</span>
+                    </div>
+                    <div class="cgp-ortho-benefit-item">
+                        <i class="bi bi-star-fill"></i>
+                        <span>Suitable for children, teens, and adults</span>
+                    </div>
+                    <div class="cgp-ortho-benefit-item">
+                        <i class="bi bi-star-fill"></i>
+                        <span>Predictable, permanent results</span>
+                    </div>
+                    <div class="cgp-ortho-benefit-item">
+                        <i class="bi bi-star-fill"></i>
+                        <span>Address multiple dental issues</span>
+                    </div>
+                    <div class="cgp-ortho-benefit-item">
+                        <i class="bi bi-star-fill"></i>
+                        <span>Improves oral health and facial aesthetics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="cgp-ortho-stats-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title" style="color: white;">Our Success Numbers</h2>
+            <div class="row mt-4">
+                <div class="col-md-3 col-6">
+                    <div class="cgp-ortho-stat-item">
+                        <div class="cgp-ortho-stat-number">7,538</div>
+                        <div class="cgp-ortho-stat-label">Facial Recontouring Cases</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cgp-ortho-stat-item">
+                        <div class="cgp-ortho-stat-number">4,132</div>
+                        <div class="cgp-ortho-stat-label">Cleft Corrections</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cgp-ortho-stat-item">
+                        <div class="cgp-ortho-stat-number">2,158</div>
+                        <div class="cgp-ortho-stat-label">Orthodontic-Surgical Procedures</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cgp-ortho-stat-item">
+                        <div class="cgp-ortho-stat-number">100%</div>
+                        <div class="cgp-ortho-stat-label">Faster Treatment Times</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="cgp-ortho-gallery-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Our Clinic & Treatment Experience</h2>
+            
+            <div class="cgp-ortho-gallery-grid">
+                <div class="cgp-ortho-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80" alt="Modern Orthodontic Clinic" class="cgp-ortho-gallery-image">
+                    <div class="cgp-ortho-gallery-overlay">
+                        <h5>State-of-the-Art Facility</h5>
+                    </div>
+                </div>
+                <div class="cgp-ortho-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Consultation Room" class="cgp-ortho-gallery-image">
+                    <div class="cgp-ortho-gallery-overlay">
+                        <h5>Comfortable Consultations</h5>
+                    </div>
+                </div>
+                <div class="cgp-ortho-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=800&q=80" alt="Advanced Technology" class="cgp-ortho-gallery-image">
+                    <div class="cgp-ortho-gallery-overlay">
+                        <h5>3D Imaging & Diagnostics</h5>
+                    </div>
+                </div>
+                <div class="cgp-ortho-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&q=80" alt="Treatment Area" class="cgp-ortho-gallery-image">
+                    <div class="cgp-ortho-gallery-overlay">
+                        <h5>Modern Treatment Rooms</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="cgp-ortho-location-section">
+        <div class="container">
+            <h2 class="cgp-ortho-section-title">Schedule Your Free Consultation</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="cgp-ortho-location-card">
+                        <div class="cgp-ortho-location-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div>
+                                <strong>Clinic Golden Proportions</strong><br>
+                                80 Feet Road, Koramangala 4th Block<br>
+                                Bangalore – 560034
+                            </div>
+                        </div>
+                        
+                        <div class="cgp-ortho-location-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <div>
+                                <strong>Clinic Hours</strong><br>
+                                Mon-Sun: 8:00 AM - 6:30 PM
+                            </div>
+                        </div>
+                        
+                        <div class="cgp-ortho-location-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:+916362717686" style="color: var(--cgp-primary); text-decoration: none;">+91 63627 17686</a>
+                            </div>
+                        </div>
+                        
+                        <div class="cgp-ortho-location-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:info@clinicgp.com" style="color: var(--cgp-primary); text-decoration: none;">info@clinicgp.com</a> | 
+                                <a href="mailto:vshetty@hotmail.com" style="color: var(--cgp-primary); text-decoration: none;">vshetty@hotmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cgp-ortho-cta-section">
+        <div class="container">
+            <h2 class="cgp-ortho-cta-title">Ready to Transform Your Smile?</h2>
+            
+            <div class="cgp-ortho-cta-contact">
+                <div class="cgp-ortho-cta-contact-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:+916362717686" style="color: white; text-decoration: none;">+91 63627 17686</a>
+                </div>
+                <div class="cgp-ortho-cta-contact-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:info@clinicgp.com" style="color: white; text-decoration: none;">info@clinicgp.com</a>
+                </div>
+            </div>
+            
+            <a href="tel:+916362717686" class="cgp-ortho-btn-light">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cgp-ortho-footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Clinic Golden Proportions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
