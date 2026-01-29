@@ -406,19 +406,20 @@
         /* Location Section */
         .cgp-location-section {
             padding: 80px 0;
-            background: white;
+            background: linear-gradient(rgba(26, 77, 122, 0.9), rgba(15, 58, 95, 0.9)),
+                url('https://images.unsplash.com/photo-1629909615184-74f495363b67?w=1920&q=80') center/cover no-repeat;
+            position: relative;
         }
 
-
-
-
-
         .cgp-location-card {
-            background: var(--cgp-light);
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
             padding: 40px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .cgp-location-item {
@@ -451,14 +452,26 @@
             color: var(--cgp-secondary) !important;
         }
 
+        /* Section title styling for location section */
+        .cgp-location-section .cgp-section-title {
+            color: white;
+        }
+
+        .cgp-location-section .cgp-section-title::after {
+            background: var(--cgp-secondary);
+        }
+
         /* Form styling for Location Section */
         .cgp-location-section .cgp-glass-form {
-            background: var(--cgp-light);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: none;
             -webkit-backdrop-filter: none;
             border: none;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             color: var(--cgp-text);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .cgp-location-section .cgp-glass-form h3 {
@@ -664,6 +677,23 @@
             .cgp-cta-contact {
                 flex-direction: column;
                 gap: 20px;
+            }
+        }
+
+        /* Process Section Image */
+        .cgp-process-image {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 991px) {
+            .cgp-process-image {
+                min-height: 300px;
+                margin-top: 30px;
             }
         }
     </style>
@@ -968,53 +998,62 @@
         <div class="container">
             <h2 class="cgp-section-title">Our Treatment Process</h2>
 
-            <div class="cgp-process-timeline">
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">1</div>
-                    <div class="cgp-step-content">
-                        <h4>Detailed Consultation</h4>
-                        <p>Review of medical history and comprehensive evaluation</p>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="cgp-process-timeline">
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">1</div>
+                            <div class="cgp-step-content">
+                                <h4>Detailed Consultation</h4>
+                                <p>Review of medical history and comprehensive evaluation</p>
+                            </div>
+                        </div>
+
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">2</div>
+                            <div class="cgp-step-content">
+                                <h4>Advanced Imaging</h4>
+                                <p>X-rays, CT scans, and 3D digital imaging as required</p>
+                            </div>
+                        </div>
+
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">3</div>
+                            <div class="cgp-step-content">
+                                <h4>Personalized Treatment Plan</h4>
+                                <p>Unique plan tailored to your specific condition</p>
+                            </div>
+                        </div>
+
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">4</div>
+                            <div class="cgp-step-content">
+                                <h4>Pre-Operative Protocols</h4>
+                                <p>Structured preparation to reduce complications</p>
+                            </div>
+                        </div>
+
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">5</div>
+                            <div class="cgp-step-content">
+                                <h4>Expert Surgery</h4>
+                                <p>Performed with technical excellence and aesthetic vision</p>
+                            </div>
+                        </div>
+
+                        <div class="cgp-process-step">
+                            <div class="cgp-step-number">6</div>
+                            <div class="cgp-step-content">
+                                <h4>Complete Aftercare</h4>
+                                <p>Comprehensive post-operative support and follow-up</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">2</div>
-                    <div class="cgp-step-content">
-                        <h4>Advanced Imaging</h4>
-                        <p>X-rays, CT scans, and 3D digital imaging as required</p>
-                    </div>
-                </div>
-
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">3</div>
-                    <div class="cgp-step-content">
-                        <h4>Personalized Treatment Plan</h4>
-                        <p>Unique plan tailored to your specific condition</p>
-                    </div>
-                </div>
-
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">4</div>
-                    <div class="cgp-step-content">
-                        <h4>Pre-Operative Protocols</h4>
-                        <p>Structured preparation to reduce complications</p>
-                    </div>
-                </div>
-
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">5</div>
-                    <div class="cgp-step-content">
-                        <h4>Expert Surgery</h4>
-                        <p>Performed with technical excellence and aesthetic vision</p>
-                    </div>
-                </div>
-
-                <div class="cgp-process-step">
-                    <div class="cgp-step-number">6</div>
-                    <div class="cgp-step-content">
-                        <h4>Complete Aftercare</h4>
-                        <p>Comprehensive post-operative support and follow-up</p>
-                    </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=800&q=80"
+                        alt="Medical Treatment Process" class="cgp-process-image">
                 </div>
             </div>
         </div>
