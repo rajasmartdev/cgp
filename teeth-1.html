@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeth Braces in Bangalore | Clinic Golden Proportions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-teal: #17a7a6;
+            --primary-navy: #1e3a5f;
+            --light-bg: #e8f4f8;
+            --dark-navy: #2c3e7a;
+            --text-dark: #1a1a1a;
+            --text-light: #666666;
+            --white: #ffffff;
+            --accent-gold: #d4af37;
+            --light-teal: #c1e7e6;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            letter-spacing: 0.5px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-accent {
+            color: var(--primary-teal);
+        }
+
+        nav {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-teal);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, var(--primary-teal), #17a7a6);
+            color: var(--white);
+            padding: 0.75rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(23, 167, 166, 0.25);
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(23, 167, 166, 0.35);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--light-bg) 0%, #d9f0f3 100%);
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            right: -200px;
+            top: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(23, 167, 166, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-navy), var(--dark-navy));
+            color: var(--white);
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(30, 58, 95, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(30, 58, 95, 0.35);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-navy);
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--primary-navy);
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-navy);
+            color: var(--white);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(30, 58, 95, 0.25);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-box {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-teal), #20b8b7);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .stat-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-content p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Hero Image */
+        .hero-image {
+            position: relative;
+            z-index: 3;
+        }
+
+        .circular-image {
+            width: 100%;
+            height: auto;
+            min-height: 450px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1rem;
+            box-shadow: 0 25px 60px rgba(23, 167, 166, 0.25);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .circular-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(23, 167, 166, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-30px, -30px); }
+        }
+
+        .circular-image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Conditions Section with Dual Layout */
+        .conditions-section {
+            padding: 6rem 2rem;
+            background: var(--white);
+            position: relative;
+        }
+
+        .conditions-section::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--light-teal), transparent);
+        }
+
+        .conditions-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .conditions-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .conditions-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .section-label {
+            color: var(--primary-teal);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            max-width: 100%;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.8rem;
+        }
+
+        .condition-card {
+            background: linear-gradient(135deg, var(--light-bg) 0%, rgba(217, 240, 243, 0.5) 100%);
+            color: var(--text-dark);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: left;
+            border: 1px solid rgba(23, 167, 166, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .condition-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-teal), transparent);
+        }
+
+        .condition-card:hover {
+            transform: translateX(10px);
+            border-color: var(--primary-teal);
+            background: linear-gradient(135deg, rgba(23, 167, 166, 0.05), rgba(217, 240, 243, 0.8));
+            box-shadow: 0 8px 30px rgba(23, 167, 166, 0.15);
+        }
+
+        .condition-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-teal) 0%, #20b8b7 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .condition-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .condition-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Conditions Image */
+        .conditions-image {
+            position: relative;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(23, 167, 166, 0.2);
+            background: linear-gradient(135deg, var(--light-bg) 0%, #d9f0f3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .conditions-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, #f8fdfe 0%, var(--white) 100%);
+        }
+
+        .why-choose-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .benefits-intro {
+            background: linear-gradient(135deg, rgba(23, 167, 166, 0.05) 0%, rgba(217, 240, 243, 0.5) 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin: 2rem 0 3rem;
+            border-left: 5px solid var(--primary-teal);
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .benefits-intro p {
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .check-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .check-item:hover {
+            background: var(--light-bg);
+            transform: translateY(-5px);
+            border-color: var(--primary-teal);
+            box-shadow: 0 8px 20px rgba(23, 167, 166, 0.1);
+        }
+
+        .check-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-teal), #20b8b7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .check-text {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        /* Who Can Get Section */
+        .who-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #d9f0f3 100%);
+            position: relative;
+        }
+
+        .who-section::after {
+            content: '';
+            position: absolute;
+            right: -100px;
+            bottom: -50px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(23, 167, 166, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .who-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .patient-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .patient-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(23, 167, 166, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .patient-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-teal), var(--primary-navy));
+        }
+
+        .patient-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(23, 167, 166, 0.2);
+            border-color: var(--primary-teal);
+        }
+
+        .patient-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+        }
+
+        .patient-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.8rem;
+        }
+
+        .patient-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .who-message {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--primary-navy), var(--dark-navy));
+            border-radius: 16px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .who-message::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        }
+
+        .who-message h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .who-message p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Types of Braces - Dual Layout */
+        .types-section {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .types-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .types-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .types-content {
+            order: 2;
+        }
+
+        .types-intro {
+            background: linear-gradient(135deg, rgba(23, 167, 166, 0.05) 0%, rgba(217, 240, 243, 0.5) 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin: 2rem 0 3rem;
+            border-left: 5px solid var(--primary-teal);
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .types-intro p {
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+
+        .type-card {
+            background: linear-gradient(135deg, var(--white) 0%, #f0f9ff 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(23, 167, 166, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .type-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-navy), var(--primary-teal));
+        }
+
+        .type-card:hover {
+            transform: translateX(8px);
+            border-color: var(--primary-teal);
+            background: linear-gradient(135deg, rgba(23, 167, 166, 0.05), #f0f9ff);
+            box-shadow: 0 12px 30px rgba(23, 167, 166, 0.15);
+        }
+
+        .type-emoji {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+        }
+
+        .type-content h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .type-content p {
+            color: var(--text-light);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .types-image {
+            order: 1;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(23, 167, 166, 0.2);
+            background: linear-gradient(135deg, var(--light-bg) 0%, #d9f0f3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            border: 1px solid rgba(23, 167, 166, 0.1);
+        }
+
+        .types-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .trust-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .trust-card {
+            background: linear-gradient(135deg, var(--light-bg) 0%, rgba(217, 240, 243, 0.5) 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid rgba(23, 167, 166, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-teal), var(--primary-navy));
+            transition: width 0.3s ease;
+        }
+
+        .trust-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(23, 167, 166, 0.15);
+            border-color: var(--primary-teal);
+        }
+
+        .trust-card:hover::before {
+            width: 60px;
+        }
+
+        .trust-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .trust-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 0.8rem;
+        }
+
+        .trust-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .trust-philosophy {
+            background: linear-gradient(135deg, var(--primary-navy), var(--dark-navy));
+            color: var(--white);
+            padding: 3rem;
+            border-radius: 16px;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-philosophy::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(23, 167, 166, 0.1) 0%, transparent 70%);
+        }
+
+        .trust-philosophy h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .trust-philosophy p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--dark-navy) 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 6rem 2rem;
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(23, 167, 166, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .cta-section p {
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-teal), #20b8b7);
+            color: var(--white);
+            padding: 1.1rem 2.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Outfit', sans-serif;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(23, 167, 166, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(23, 167, 166, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-navy);
+            color: var(--white);
+            padding: 5rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            color: var(--primary-teal);
+            font-size: 1.1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-bottom: 0.8rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-teal);
+            margin-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .conditions-wrapper,
+            .types-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .types-image {
+                order: 2;
+            }
+
+            .types-content {
+                order: 1;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .patient-grid,
+            .check-grid,
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                margin: 4rem 1.5rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .who-message h3 {
+                font-size: 1.4rem;
+            }
+
+            .conditions-grid,
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">CLINIC GOLDEN <span class="logo-accent">PROPORTIONS</span></div>
+        <nav>
+            <a href="#conditions">Conditions</a>
+            <a href="#why-choose">Why Choose</a>
+            <a href="#who-can">Who Can Get</a>
+            <a href="#types">Types</a>
+            <a href="#trust">Why Trust</a>
+        </nav>
+        <button class="nav-button" onclick="scrollToForm()">Book Consultation</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Get the Confident Smile You've Always Wanted</h1>
+                <p class="hero-subtitle">20+ Years of Total Experience | 3000+ Successful Braces Treatments | Treatment Duration Starting from 6 Months*</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToForm()">Schedule Consultation</button>
+                    <button class="btn-secondary" onclick="document.getElementById('conditions').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <div class="stat-icon">20+</div>
+                        <div class="stat-content">
+                            <h3>20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">✓</div>
+                        <div class="stat-content">
+                            <h3>3000+</h3>
+                            <p>Successful Cases</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">6M</div>
+                        <div class="stat-content">
+                            <h3>From 6M</h3>
+                            <p>Treatment Duration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="circular-image">
+                    <!-- Add your image here: <img src="your-image.jpg" alt="Professional orthodontist"> -->
+                    <p>Placeholder for Hero Image (500x500px recommended)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conditions We Treat Section -->
+    <section class="conditions-section" id="conditions">
+        <div class="conditions-container">
+            <div class="conditions-wrapper">
+                <div class="conditions-content">
+                    <div class="section-header">
+                        <div class="section-label">Our Services</div>
+                        <h2 class="section-title">Conditions We Treat</h2>
+                    </div>
+
+                    <div class="conditions-grid">
+                        <div class="condition-card">
+                            <div class="condition-icon">🦷</div>
+                            <div>
+                                <h3>Teeth Spacing</h3>
+                                <p>Gaps between teeth can be closed with proper orthodontic treatment for a unified smile</p>
+                            </div>
+                        </div>
+                        <div class="condition-card">
+                            <div class="condition-icon">🔄</div>
+                            <div>
+                                <h3>Crowding</h3>
+                                <p>Overlapping teeth are properly aligned using braces to create space and correct positioning</p>
+                            </div>
+                        </div>
+                        <div class="condition-card">
+                            <div class="condition-icon">📐</div>
+                            <div>
+                                <h3>Bite Issues</h3>
+                                <p>Overbite, underbite, and crossbite problems are corrected for optimal jaw alignment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conditions-image">
+                    <!-- Add your image here: <img src="your-image.jpg" alt="Teeth conditions treatment"> -->
+                    <p>Placeholder for Conditions Image (500x500px recommended)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Teeth Braces Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="why-choose-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Teeth Braces?</h2>
+                <p class="section-subtitle">Teeth braces are not just about aesthetics they improve:</p>
+            </div>
+
+            <div class="benefits-intro">
+                <p>Teeth braces are not just about aesthetics they improve: Teeth alignment, Bite correction, Jaw positioning, Oral hygiene, Speech clarity, Long-term dental health. Properly aligned teeth reduce the risk of cavities, gum disease, and jaw pain. Braces are an investment in both your smile and your overall oral health.</p>
+            </div>
+
+            <div class="check-grid">
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Teeth alignment</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Bite correction</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Jaw positioning</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Oral hygiene</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Speech clarity</span>
+                </div>
+                <div class="check-item">
+                    <div class="check-icon">✓</div>
+                    <span class="check-text">Long-term dental health</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Get Braces Section -->
+    <section class="who-section" id="who-can">
+        <div class="who-container">
+            <div class="section-header">
+                <h2 class="section-title">Who Can Get Braces?</h2>
+                <p class="section-subtitle">Braces are ideal for:</p>
+            </div>
+
+            <div class="patient-grid">
+                <div class="patient-card">
+                    <div class="patient-emoji">👶</div>
+                    <h3>Children</h3>
+                    <p>Early orthodontic correction</p>
+                </div>
+                <div class="patient-card">
+                    <div class="patient-emoji">👨‍🎓</div>
+                    <h3>Teenagers</h3>
+                    <p></p>
+                </div>
+                <div class="patient-card">
+                    <div class="patient-emoji">👨‍💼</div>
+                    <h3>Adults who want smile correction</h3>
+                    <p></p>
+                </div>
+                <div class="patient-card">
+                    <div class="patient-emoji">⚡</div>
+                    <h3>Patients with spacing, crowding, or bite issues</h3>
+                    <p></p>
+                </div>
+                <div class="patient-card">
+                    <div class="patient-emoji">🦴</div>
+                    <h3>People with jaw alignment problems</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="who-message">
+                <h3>It's never too late to straighten your teeth!</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Braces Section -->
+    <section class="types-section" id="types">
+        <div class="types-container">
+            <div class="types-wrapper">
+                <div class="types-image">
+                    <!-- Add your image here: <img src="your-image.jpg" alt="Different types of braces"> -->
+                    <p>Placeholder for Types Image (500x500px recommended)</p>
+                </div>
+
+                <div class="types-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Types of Braces We Offer</h2>
+                    </div>
+
+                    <div class="types-intro">
+                        <p>We provide customized orthodontic solutions based on your needs:</p>
+                    </div>
+
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-emoji">🦷</div>
+                            <div class="type-content">
+                                <h3>Metal Braces</h3>
+                                <p>Traditional, effective braces for comprehensive teeth alignment</p>
+                            </div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-emoji">💎</div>
+                            <div class="type-content">
+                                <h3>Ceramic Braces</h3>
+                                <p>Tooth-colored braces for a more discreet appearance</p>
+                            </div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-emoji">👁️</div>
+                            <div class="type-content">
+                                <h3>Lingual Braces</h3>
+                                <p>Hidden behind teeth for complete invisibility</p>
+                            </div>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-emoji">📱</div>
+                            <div class="type-content">
+                                <h3>Clear Aligners</h3>
+                                <p>Virtually invisible, removable trays for discreet treatment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Patients Trust Us Section -->
+    <section class="trust-section" id="trust">
+        <div class="trust-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Patients Trust Clinic Golden Proportions</h2>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">👨‍⚕️</div>
+                    <h3>Experienced orthodontic specialists</h3>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">📊</div>
+                    <h3>Advanced digital smile analysis</h3>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">✨</div>
+                    <h3>Personalized treatment plans</h3>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🔬</div>
+                    <h3>Modern technology & sterilization protocols</h3>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🏥</div>
+                    <h3>Comfortable and patient-friendly environment</h3>
+                </div>
+            </div>
+
+            <div class="trust-philosophy">
+                <h3>Our Philosophy</h3>
+                <p>We don't believe in "one-size-fits-all" treatments. Every smile is unique — and so is every treatment plan we design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section>
+        <div class="cta-section">
+            <h2>Ready for Your Perfect Smile?</h2>
+            <p>Schedule your free consultation with our expert orthodontists today</p>
+            <button class="cta-button" onclick="scrollToForm()">Book Your Consultation Now</button>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">*Treatment duration may vary depending on individual case complexity</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Clinic Golden Proportions</h4>
+                <p>Professional Orthodontic Care in Bangalore</p>
+                <p>20+ years of excellence in smile transformation</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#conditions">Services</a>
+                <a href="#why-choose">Why Choose</a>
+                <a href="#who-can">Who Can Get</a>
+                <a href="#types">Types</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 +91 XXXXX XXXXX</p>
+                <p>📧 contact@goldenpro.com</p>
+                <p>📍 Bangalore, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clinic Golden Proportions. All rights reserved.</p>
+            <p style="margin-top: 1rem;">Professional Dental Care in Bangalore</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll function
+        function scrollToForm() {
+            document.querySelector('.conditions-section').scrollIntoView({behavior: 'smooth'});
+        }
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
+</body>
+</html>
