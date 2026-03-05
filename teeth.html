@@ -12,6 +12,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
@@ -536,38 +537,36 @@
         }
 
         /* ===== CONDITIONS WE TREAT ===== */
-        .condition-card {
+        .cgp-ortho-conditions-section {
+            padding: 80px 0;
+            background: var(--light-grey);
+        }
+
+        .cgp-ortho-conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .cgp-ortho-condition-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
             background: var(--white);
-            border: 1px solid var(--grey-border);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
+            border-radius: 10px;
             transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(11, 31, 58, 0.05);
-            height: 100%;
         }
 
-        .condition-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(11, 31, 58, 0.12);
-            border-color: var(--accent-teal);
+        .cgp-ortho-condition-item:hover {
+            background: var(--cgp-gold-light);
+            transform: translateX(5px);
         }
 
-        .condition-icon {
-            font-size: 3rem;
-            color: var(--accent-teal);
-            margin-bottom: 1rem;
-        }
-
-        .condition-card h5 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .condition-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
+        .cgp-ortho-condition-item i {
+            color:  #00a0a0;
+            font-size: 1.5rem;
         }
 
         /* ===== WHY CHOOSE SECTION ===== */
@@ -1552,64 +1551,38 @@
 
     
     <!-- ===== CONDITIONS WE TREAT ===== -->
-    <section class="section-light" id="treatments">
+    <section class="cgp-ortho-conditions-section section-white">
         <div class="container">
-            <h2 class="section-title">Conditions We Treat</h2>
-            <p class="section-subtitle">We specialize in correcting a wide range of dental and orthodontic conditions</p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-1.png" alt="">
-                        </div>
-                        <h5>Teeth Crowding</h5>
-                        <p>When teeth are too large for the space available, causing overlapping and misalignment.</p>
-                    </div>
+            <h2 class="cgp-ortho-section-title">Conditions We Treat</h2>
+
+            <div class="cgp-ortho-conditions-grid">
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Crooked or crowded teeth</span>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-2.png" alt="">
-                        </div>
-                        <h5>Teeth Spacing</h5>
-                        <p>Unwanted gaps between teeth that can affect your smile and speech.</p>
-                    </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Gummy smile</span>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-3.png" alt="">
-                        </div>
-                        <h5>Bite Correction</h5>
-                        <p>Overbites, underbites, and crossbites that affect chewing and speech.</p>
-                    </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Overbite / Underbite / Crossbite</span>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-4.png" alt="">
-                        </div>
-                        <h5>Open Bite</h5>
-                        <p>When the upper and lower teeth don't meet properly when closed.</p>
-                    </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Protruding teeth</span>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-5.png" alt="">
-                        </div>
-                        <h5>Jaw Misalignment</h5>
-                        <p>Problems with jaw positioning that can lead to pain and dysfunction.</p>
-                    </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Gaps and spacing</span>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="condition-card">
-                        <div class="condition-icon">
-                            <img src="assets/icon-6.png" alt="">
-                        </div>
-                        <h5>Aesthetic Concerns</h5>
-                        <p>Anyone looking to improve the appearance and alignment of their smile.</p>
-                    </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Jaw misalignment</span>
+                </div>
+                <div class="cgp-ortho-condition-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Facial asymmetry</span>
                 </div>
             </div>
         </div>
@@ -1688,6 +1661,78 @@
             </div>
         </div>
     </section>
+
+    <!-- ===== TYPES OF BRACES ===== -->
+    <section class="section-white" id="braces">
+        <div class="container">
+            <h2 class="section-title">Types of Braces We Offer</h2>
+            <p class="section-subtitle">We provide customized orthodontic solutions based on your needs</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="braces-type">
+                        <div class="braces-image">
+                            <img src="assets/ser-1.png" alt="">
+                        </div>
+                        <div class="braces-content">
+                            <h5>Metal Braces</h5>
+                            <p>Most effective and reliable option for all dental corrections. Durable, cost-effective solution for simple to complex cases.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="braces-type">
+                        <div class="braces-image">
+                            <img src="assets/ser-2.jpg" alt="">
+                        </div>
+                        <div class="braces-content">
+                            <h5>Ceramic Braces</h5>
+                            <p>Tooth-colored brackets that blend naturally. Aesthetic appeal with the same effectiveness as metal braces.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="braces-type">
+                        <div class="braces-image">
+                            <img src="assets/ser-3.jpg" alt="">
+                        </div>
+                        <div class="braces-content">
+                            <h5>Self-Ligating Braces</h5>
+                            <p>Advanced system with fewer adjustments and faster treatment time. More comfortable with quicker results.</p>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="braces-type">
+                        <div class="braces-image">
+                            <img src="assets/ser-4.jpg" alt="">
+                        </div>
+                        <div class="braces-content">
+                            <h5>Lingual Braces</h5>
+                            <p>Hidden behind teeth for complete invisibility. Perfect for those seeking maximum discretion during treatment.</p>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="braces-type">
+                        <div class="braces-image">
+                            <img src="assets/ser-5.jpg" alt="">
+                        </div>
+                        <div class="braces-content">
+                            <h5>Clear Aligners</h5>
+                            <p>Removable, transparent trays for mild to moderate corrections. Ideal for adults preferring discreet treatment.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
 
     <!-- ===== WHY PATIENTS TRUST ===== -->
     <section class="section-white">
@@ -1895,19 +1940,11 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-12 mb-3">
                                 <label class="form-label">Phone Number *</label>
                                 <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Age Group *</label>
-                                <select class="form-control" required>
-                                    <option value="">Select age group</option>
-                                    <option value="child">Child (6-12)</option>
-                                    <option value="teen">Teenager (13-19)</option>
-                                    <option value="adult">Adult (20+)</option>
-                                </select>
-                            </div>
+                            
                         </div>
 
                         <div class="row">
